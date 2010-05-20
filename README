@@ -1,0 +1,33 @@
+###Lookup Location by IP
+
+Utilizes the Geo Database provided by http://maxmind.com
+
+Query for City, Country, Region and Lat/Long as well as
+distance between two IPs.
+ 
+Example usage:
+     >> var loc = new Location('194.232.104.21')
+     >> loc.country
+     Austria
+     >> loc.region
+     Wien
+     >> loc.city
+     Vienna
+     >> loc.latitude, loc.longitude
+     16.36669921875
+     >> [loc.latitude, loc.longitude]
+     48.19999694824219,16.36669921875
+     >> loc.timezone
+     Europe/Vienna
+     
+     >> distance('194.232.104.21', '91.197.28.69')
+     622.7711747120934 // in kilometer
+
+     >> var location = new Location('invalid.ip')
+     Error: could not lookup ip invalid.ip
+
+## Legalese
+
+Under the license agreement, all advertising materials and documentation mentioning features or use of this database must display the following acknowledgment:
+
+This product includes GeoLite data created by MaxMind, available from http://www.maxmind.com/.

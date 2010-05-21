@@ -13,7 +13,7 @@ Example usage:
      Wien
      >> loc.city
      Vienna
-     >> loc.latitude, loc.longitude
+     >> loc.latitude
      16.36669921875
      >> [loc.latitude, loc.longitude]
      48.19999694824219,16.36669921875
